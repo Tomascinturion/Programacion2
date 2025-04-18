@@ -13,4 +13,11 @@ public class VeterinariaContext : DbContext
     public DbSet<AnimalAtendido> AnimalAtendido { get; set; } = null!;
     public DbSet<Atencion> Atencion { get; set;} = null!;
     public DbSet<DuenoAnimal> DuenoAnimal { get; set; } = null!;
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=VeterinariaProg;Integrated Security=True;TrustServerCertificate=true;");
+    }
+
+
 }

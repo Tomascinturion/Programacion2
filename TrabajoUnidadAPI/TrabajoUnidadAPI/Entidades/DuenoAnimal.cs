@@ -12,5 +12,6 @@ namespace CDatos.Entidades
         public int Dni { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
+        public ICollection<AnimalAtendido> AnimalAtendido { get; set; }
     }
 }
