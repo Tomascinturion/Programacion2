@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCF5B413-A974-4894-8BF0-BFF3B1651F6F}|ApiVeterinaria\\ApiVeterinaria.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\apiveterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCF5B413-A974-4894-8BF0-BFF3B1651F6F}|ApiVeterinaria\\ApiVeterinaria.csproj|solutionrelative:apiveterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\clogica\\logica\\animalatendidologic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|solutionrelative:clogica\\logica\\animalatendidologic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion2\\trabajounidadapi\\cdatos\\data\\veterinariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\data\\veterinariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion2\\trabajounidadapi\\trabajounidadapi\\dtos\\crearanimalatendidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|solutionrelative:trabajounidadapi\\dtos\\crearanimalatendidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion2\\trabajounidadapi\\trabajounidadapi\\entidades\\atencion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|solutionrelative:trabajounidadapi\\entidades\\atencion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion2\\trabajounidadapi\\trabajounidadapi\\entidades\\animalatendido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\trabajounidadapi\\entidades\\animalatendido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|solutionrelative:trabajounidadapi\\entidades\\animalatendido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\trabajounidadapi\\entidades\\atencion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CDatos.csproj|solutionrelative:trabajounidadapi\\entidades\\atencion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion2\\trabajounidadapi\\trabajounidadapi\\entidades\\duenoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,80 +23,8 @@
       "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CDatos.csproj|solutionrelative:trabajounidadapi\\entidades\\duenoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion2\\trabajounidadapi\\trabajounidadapi\\entidades\\tipoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|solutionrelative:trabajounidadapi\\entidades\\tipoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\trabajounidadapi\\entidades\\tipoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CDatos.csproj|solutionrelative:trabajounidadapi\\entidades\\tipoanimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion2\\trabajounidadapi\\trabajounidadapi\\centidades.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CEntidades.csproj|solutionrelative:trabajounidadapi\\centidades.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\trabajounidadapi\\entidades\\animalatendido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10BD709D-2529-4E9B-9F93-77451602EAB3}|TrabajoUnidadAPI\\CDatos.csproj|solutionrelative:trabajounidadapi\\entidades\\animalatendido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCF5B413-A974-4894-8BF0-BFF3B1651F6F}|ApiVeterinaria\\ApiVeterinaria.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\apiveterinaria\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CCF5B413-A974-4894-8BF0-BFF3B1651F6F}|ApiVeterinaria\\ApiVeterinaria.csproj|solutionrelative:apiveterinaria\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\clogica\\logica\\animalatendidologic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|solutionrelative:clogica\\logica\\animalatendidologic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|c:\\users\\tomic\\onedrive\\documentos\\github\\programacion2\\trabajounidadapi\\clogica\\logica\\duenoanimallogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\clogica\\logica\\duenoanimallogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|solutionrelative:clogica\\logica\\duenoanimallogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\clogica\\logica\\atencionlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|solutionrelative:clogica\\logica\\atencionlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\clogica\\logica\\contracts\\iatencionlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|solutionrelative:clogica\\logica\\contracts\\iatencionlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\clogica\\logica\\contracts\\ianimalatendidologic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|solutionrelative:clogica\\logica\\contracts\\ianimalatendidologic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\clogica\\logica\\contracts\\iduenoanimallogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA0603E-0CD0-48E0-AED6-B6B9C6C1780E}|CLogica\\CLogica.csproj|solutionrelative:clogica\\logica\\contracts\\iduenoanimallogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\cdatos\\repositorios\\implementaciones\\ianimalatendidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\repositorios\\implementaciones\\ianimalatendidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\cdatos\\repositorios\\animalatendidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\repositorios\\animalatendidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\cdatos\\repositorios\\duenoanimalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\repositorios\\duenoanimalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\cdatos\\repositorios\\atencionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\repositorios\\atencionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\cdatos\\repositorios\\implementaciones\\iduenoanimalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\repositorios\\implementaciones\\iduenoanimalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\cdatos\\repositorios\\implementaciones\\iatencionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\repositorios\\implementaciones\\iatencionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\cdatos\\repositorios\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\repositorios\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\cdatos\\repositorios\\implementaciones\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B41437-8451-4DCA-8070-0A0B4B1179A1}|CDatos\\CDatos.csproj|solutionrelative:cdatos\\repositorios\\implementaciones\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CEntidades",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\CEntidades.csproj",
-              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\CEntidades.csproj",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\CEntidades.csproj",
-              "RelativeToolTip": "TrabajoUnidadAPI\\CEntidades.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-18T21:34:59.341Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -136,121 +43,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AnimalAtendido.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
-              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
-              "RelativeToolTip": "TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:31:25.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Atencion.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\Atencion.cs",
-              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\Atencion.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\Atencion.cs",
-              "RelativeToolTip": "TrabajoUnidadAPI\\Entidades\\Atencion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:31:25.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "DuenoAnimal.cs",
               "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\DuenoAnimal.cs",
               "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\DuenoAnimal.cs",
               "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\DuenoAnimal.cs",
               "RelativeToolTip": "TrabajoUnidadAPI\\Entidades\\DuenoAnimal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:31:25.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TipoAnimal.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\TipoAnimal.cs",
-              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\TipoAnimal.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\TipoAnimal.cs",
-              "RelativeToolTip": "TrabajoUnidadAPI\\Entidades\\TipoAnimal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:31:25.163Z",
+              "WhenOpened": "2025-04-21T15:31:33.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VeterinariaContext.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Data\\VeterinariaContext.cs",
-              "RelativeDocumentMoniker": "CDatos\\Data\\VeterinariaContext.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Data\\VeterinariaContext.cs",
-              "RelativeToolTip": "CDatos\\Data\\VeterinariaContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Title": "CrearAnimalAtendidoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\DTOs\\CrearAnimalAtendidoDTO.cs",
+              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\DTOs\\CrearAnimalAtendidoDTO.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\DTOs\\CrearAnimalAtendidoDTO.cs",
+              "RelativeToolTip": "TrabajoUnidadAPI\\DTOs\\CrearAnimalAtendidoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:30:44.21Z",
+              "WhenOpened": "2025-04-21T15:13:17.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "AnimalAtendidoLogic.cs",
               "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\AnimalAtendidoLogic.cs",
               "RelativeDocumentMoniker": "CLogica\\Logica\\AnimalAtendidoLogic.cs",
               "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\AnimalAtendidoLogic.cs",
               "RelativeToolTip": "CLogica\\Logica\\AnimalAtendidoLogic.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA7AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T14:13:30.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\ApiVeterinaria\\Program.cs",
-              "RelativeDocumentMoniker": "ApiVeterinaria\\Program.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\ApiVeterinaria\\Program.cs",
-              "RelativeToolTip": "ApiVeterinaria\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABCAAAA",
+              "DocumentIndex": 2,
+              "Title": "AnimalAtendido.cs",
+              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
+              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
+              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
+              "RelativeToolTip": "TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:15:19.47Z",
+              "WhenOpened": "2025-04-18T21:31:25.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TipoAnimal.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\TipoAnimal.cs",
-              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\TipoAnimal.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\TipoAnimal.cs",
-              "RelativeToolTip": "TrabajoUnidadAPI\\Entidades\\TipoAnimal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T12:16:49.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Atencion.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\Atencion.cs",
-              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\Atencion.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\Atencion.cs",
-              "RelativeToolTip": "TrabajoUnidadAPI\\Entidades\\Atencion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T12:20:47.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "DuenoAnimalLogic.cs",
               "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\DuenoAnimalLogic.cs",
               "RelativeDocumentMoniker": "CLogica\\Logica\\DuenoAnimalLogic.cs",
@@ -263,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "DuenoAnimal.cs",
               "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\DuenoAnimal.cs",
               "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\DuenoAnimal.cs",
@@ -272,187 +116,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T12:20:06.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AtencionLogic.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\AtencionLogic.cs",
-              "RelativeDocumentMoniker": "CLogica\\Logica\\AtencionLogic.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\AtencionLogic.cs",
-              "RelativeToolTip": "CLogica\\Logica\\AtencionLogic.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T14:12:50.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IAnimalAtendidoLogic.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\Contracts\\IAnimalAtendidoLogic.cs",
-              "RelativeDocumentMoniker": "CLogica\\Logica\\Contracts\\IAnimalAtendidoLogic.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\Contracts\\IAnimalAtendidoLogic.cs",
-              "RelativeToolTip": "CLogica\\Logica\\Contracts\\IAnimalAtendidoLogic.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T14:15:02.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IAtencionLogic.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\Contracts\\IAtencionLogic.cs",
-              "RelativeDocumentMoniker": "CLogica\\Logica\\Contracts\\IAtencionLogic.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\Contracts\\IAtencionLogic.cs",
-              "RelativeToolTip": "CLogica\\Logica\\Contracts\\IAtencionLogic.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T14:16:50.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Repository.cs",
-              "RelativeDocumentMoniker": "CDatos\\Repositorios\\Repository.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Repository.cs",
-              "RelativeToolTip": "CDatos\\Repositorios\\Repository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:39:58.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AnimalAtendido.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
-              "RelativeDocumentMoniker": "TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
-              "RelativeToolTip": "TrabajoUnidadAPI\\Entidades\\AnimalAtendido.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T12:19:22.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IDuenoAnimalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Implementaciones\\IDuenoAnimalRepository.cs",
-              "RelativeDocumentMoniker": "CDatos\\Repositorios\\Implementaciones\\IDuenoAnimalRepository.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Implementaciones\\IDuenoAnimalRepository.cs",
-              "RelativeToolTip": "CDatos\\Repositorios\\Implementaciones\\IDuenoAnimalRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:39:08.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\ApiVeterinaria\\appsettings.json",
-              "RelativeDocumentMoniker": "ApiVeterinaria\\appsettings.json",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\ApiVeterinaria\\appsettings.json",
-              "RelativeToolTip": "ApiVeterinaria\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-16T13:23:31.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IDuenoAnimalLogic.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\Contracts\\IDuenoAnimalLogic.cs",
-              "RelativeDocumentMoniker": "CLogica\\Logica\\Contracts\\IDuenoAnimalLogic.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CLogica\\Logica\\Contracts\\IDuenoAnimalLogic.cs",
-              "RelativeToolTip": "CLogica\\Logica\\Contracts\\IDuenoAnimalLogic.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T14:17:09.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IAtencionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Implementaciones\\IAtencionRepository.cs",
-              "RelativeDocumentMoniker": "CDatos\\Repositorios\\Implementaciones\\IAtencionRepository.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Implementaciones\\IAtencionRepository.cs",
-              "RelativeToolTip": "CDatos\\Repositorios\\Implementaciones\\IAtencionRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:38:44.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AnimalAtendidoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\AnimalAtendidoRepository.cs",
-              "RelativeDocumentMoniker": "CDatos\\Repositorios\\AnimalAtendidoRepository.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\AnimalAtendidoRepository.cs",
-              "RelativeToolTip": "CDatos\\Repositorios\\AnimalAtendidoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:35:41.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AtencionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\AtencionRepository.cs",
-              "RelativeDocumentMoniker": "CDatos\\Repositorios\\AtencionRepository.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\AtencionRepository.cs",
-              "RelativeToolTip": "CDatos\\Repositorios\\AtencionRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:36:59.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DuenoAnimalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\DuenoAnimalRepository.cs",
-              "RelativeDocumentMoniker": "CDatos\\Repositorios\\DuenoAnimalRepository.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\DuenoAnimalRepository.cs",
-              "RelativeToolTip": "CDatos\\Repositorios\\DuenoAnimalRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:37:20.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IAnimalAtendidoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Implementaciones\\IAnimalAtendidoRepository.cs",
-              "RelativeDocumentMoniker": "CDatos\\Repositorios\\Implementaciones\\IAnimalAtendidoRepository.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Implementaciones\\IAnimalAtendidoRepository.cs",
-              "RelativeToolTip": "CDatos\\Repositorios\\Implementaciones\\IAnimalAtendidoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:38:18.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Implementaciones\\IRepository.cs",
-              "RelativeDocumentMoniker": "CDatos\\Repositorios\\Implementaciones\\IRepository.cs",
-              "ToolTip": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\Repositorios\\Implementaciones\\IRepository.cs",
-              "RelativeToolTip": "CDatos\\Repositorios\\Implementaciones\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:40:07.358Z",
-              "EditorCaption": ""
             }
           ]
         }

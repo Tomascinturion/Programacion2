@@ -19,5 +19,66 @@ public class VeterinariaContext : DbContext
         optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=VeterinariaProg;Integrated Security=True;TrustServerCertificate=true;");
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.HasAnnotation("Relational:Collation", "en_US.UTF-8");
+
+        modelBuilder.Entity<DuenoAnimal>(entity =>
+        {
+            entity.HasKey(e => e.IdDuenoAnimal)
+                .HasName("PK_ID_DUENOANIMAL");
+
+            entity.HasMany(e => e.AnimalAtendido)
+                .WithOne(e => e.DuenoAnimal)
+                .HasForeignKey("IdDuenoAnimal")
+                .IsRequired();
+        }
+        );
+        modelBuilder.Entity<AnimalAtendido>(entity =>
+        {
+            entity.HasKey(e => e.IdAnimalatendido)
+                .HasName("PK_ID_ANIMALATENDIDO");
+
+            entity.HasMany(e => e.Atencion)
+                .WithOne(e => e.AnimalAtendido)
+                .HasForeignKey("IdAnimalAtendido")
+                .IsRequired();
+        }
+        );
+        modelBuilder.Entity<Atencion>(entity =>
+        {
+            entity.HasKey(e => e.IdAtencion)
+                .HasName("PK_ID_ATENCION");
+
+            entity.Property(e => e.FechaAtencion)
+                .HasColumnType("datetime");
+
+            entity.HasOne(e => e.AnimalAtendido)
+                .WithMany(e => e.Atencion)
+                .HasForeignKey("IdAnimalAtendido")
+                .IsRequired();
+
+        }
+        );
+
+    }
+    public override int SaveChanges()
+    {
+        this.DoCustomEntityPreparations();
+        return base.SaveChanges();
+    }
+    private void DoCustomEntityPreparations()
+    {
+        var modifiedEntitiesWithTrackDate = this
+            .ChangeTracker.Entries()
+            .Where(c => c.State == EntityState.Modified);
+        foreach (var entityEntry in modifiedEntitiesWithTrackDate)
+        {
+            if (entityEntry.Properties.Any(c => c.Metadata.Name == "UpdatedDate"))
+            {
+                entityEntry.Property("UpdatedDate").CurrentValue = DateTime.Now;
+            }
+        }
+    }
 
 }

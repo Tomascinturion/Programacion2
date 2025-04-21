@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CDatos\CDatos.csproj" />
     <ProjectReference Include="..\TrabajoUnidadAPI\CEntidades.csproj" />
   </ItemGroup>
 

@@ -1,21 +1,19 @@
-﻿using System;
+﻿using CDatos.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CDatos.Entidades
+namespace CEntidades.DTOs
 {
-    public class AnimalAtendido
+    public class CrearAnimalAtendidoDTO
     {
-        public int IdAnimalatendido { get; set; }
         public string Nombre { get; set; }
         public TipoAnimal IdTipoAnimal { get; set; }
         public string Raza { get; set; }
         public int Edad { get; set; }
         public string Sexo { get; set; }
-        public DuenoAnimal DuenoAnimal { get; set; }
-        public ICollection<Atencion> Atencion { get; set;}
-
+        public int DniDuenoAnimal { get; set; }
     }
 }

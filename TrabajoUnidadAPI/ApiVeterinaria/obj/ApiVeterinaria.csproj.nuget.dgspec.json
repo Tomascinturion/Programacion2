@@ -213,6 +213,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\CDatos.csproj": {
+                "projectPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\CDatos\\CDatos.csproj"
+              },
               "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\CEntidades.csproj": {
                 "projectPath": "C:\\Users\\tomic\\OneDrive\\Documentos\\GitHub\\Programacion2\\TrabajoUnidadAPI\\TrabajoUnidadAPI\\CEntidades.csproj"
               }
