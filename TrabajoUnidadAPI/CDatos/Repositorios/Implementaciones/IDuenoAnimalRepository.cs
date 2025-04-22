@@ -9,5 +9,6 @@ namespace CDatos.Repositorios.Implementaciones
 {
     public interface IDuenoAnimalRepository : IRepository<DuenoAnimal>
     {
+        Task<DuenoAnimal> ObtenerPorDniAsync(int dni);
     }
 }

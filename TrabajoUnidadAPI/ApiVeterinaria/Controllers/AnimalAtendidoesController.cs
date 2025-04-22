@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CDatos.Entidades;
 using TodoApi.Models;
+using CEntidades.DTOs;
+using CDatos.Repositorios.Implementaciones;
+using CLogica.Logica.Implementaciones;
+using CLogica.Logica;
 
 namespace ApiVeterinaria.Controllers
 {
@@ -15,10 +19,16 @@ namespace ApiVeterinaria.Controllers
     public class AnimalAtendidoesController : ControllerBase
     {
         private readonly VeterinariaContext _context;
+        private readonly IDuenoAnimalRepository _DuenoAnimalRepository;
+        private readonly IAnimalAtendidoRepository _AnimalAtendidoRepository;
+        private readonly IAnimalAtendidoLogic _AnimalAtendidoLogic;
 
-        public AnimalAtendidoesController(VeterinariaContext context)
+        public AnimalAtendidoesController(VeterinariaContext context, IAnimalAtendidoRepository animalAtendidoRepository, IDuenoAnimalRepository duenoAnimalRepository, IAnimalAtendidoLogic animalAtendidoLogic)
         {
             _context = context;
+            _AnimalAtendidoRepository = animalAtendidoRepository;
+            _DuenoAnimalRepository = duenoAnimalRepository;
+            _AnimalAtendidoLogic = animalAtendidoLogic;
         }
 
         // GET: api/AnimalAtendidoes
@@ -45,59 +55,56 @@ namespace ApiVeterinaria.Controllers
         // PUT: api/AnimalAtendidoes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAnimalAtendido(int id, AnimalAtendido animalAtendido)
+        public async Task<IActionResult> PutAnimalAtendido([FromBody] EditarAnimalAtendidoDTO dto)
         {
-            if (id != animalAtendido.IdAnimalatendido)
+            if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
 
-            _context.Entry(animalAtendido).State = EntityState.Modified;
+            var resultado = await _AnimalAtendidoLogic.EditarAnimalAsync(dto);
 
-            try
+            if (!resultado)
             {
-                await _context.SaveChangesAsync();
+                return NotFound("No se encotro el animal buscado.");
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!AnimalAtendidoExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return Ok("animal modificado correctamente");
         }
 
         // POST: api/AnimalAtendidoes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<AnimalAtendido>> PostAnimalAtendido(AnimalAtendido animalAtendido)
+        public async Task<IActionResult> AltaAnimal([FromBody] CrearAnimalAtendidoDTO dto)
         {
-            _context.AnimalAtendido.Add(animalAtendido);
-            await _context.SaveChangesAsync();
+            
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            return CreatedAtAction("GetAnimalAtendido", new { id = animalAtendido.IdAnimalatendido }, animalAtendido);
+            
+            var dueno = await _DuenoAnimalRepository.ObtenerPorDniAsync(dto.DniDuenoAnimal);
+            if (dueno == null)
+                return NotFound("No se encontró un dueño con ese DNI.");
+
+            
+            await _AnimalAtendidoLogic.AltaAnimalAsync(dto, dueno.IdDuenoAnimal);
+
+            
+            return Ok("Animal registrado correctamente.");
         }
 
         // DELETE: api/AnimalAtendidoes/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAnimalAtendido(int id)
         {
-            var animalAtendido = await _context.AnimalAtendido.FindAsync(id);
-            if (animalAtendido == null)
+            try
             {
-                return NotFound();
+                await _AnimalAtendidoLogic.EliminarAnimal(id);
+                return Ok("Animal eliminado correctamente.");
             }
-
-            _context.AnimalAtendido.Remove(animalAtendido);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         private bool AnimalAtendidoExists(int id)

@@ -44,7 +44,7 @@ namespace CDatos.Repositorios
         {
             return await this._context.Set<T>().FindAsync(id);
         }
-
+   
         public void Create(T entity)
         {
             this._context.Set<T>().Add(entity);

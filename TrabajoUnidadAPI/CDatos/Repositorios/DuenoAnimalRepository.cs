@@ -1,5 +1,6 @@
 ﻿using CDatos.Entidades;
 using CDatos.Repositorios.Implementaciones;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,12 @@ namespace CDatos.Repositorios
     public class DuenoAnimalRepository : Repository<DuenoAnimal>, IDuenoAnimalRepository
     {
         public DuenoAnimalRepository(VeterinariaContext context) : base(context) { }
+
+        private readonly VeterinariaContext _context;
+
+        public async Task<DuenoAnimal> ObtenerPorDniAsync(int dni)
+        {
+            return await _context.DuenoAnimal.FirstOrDefaultAsync(d => d.Dni == dni);
+        }
     }
 }

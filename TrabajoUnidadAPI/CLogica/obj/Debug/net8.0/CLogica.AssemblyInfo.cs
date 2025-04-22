@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CLogica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5764fd4ed6554b2271255ad9a4bc2bd950b0af51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c76e4ba9318c89db4e718ac613a082c9c5369ba7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CLogica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CLogica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

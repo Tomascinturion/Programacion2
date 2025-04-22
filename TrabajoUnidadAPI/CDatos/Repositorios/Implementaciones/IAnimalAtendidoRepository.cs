@@ -9,5 +9,6 @@ namespace CDatos.Repositorios.Implementaciones
 {
     public interface IAnimalAtendidoRepository : IRepository<AnimalAtendido>
     {
+
     }
 }
