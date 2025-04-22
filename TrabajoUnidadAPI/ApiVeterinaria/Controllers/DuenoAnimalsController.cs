@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CDatos.Entidades;
 using TodoApi.Models;
+using CEntidades.DTOs;
+using CLogica.Logica.Implementaciones;
+using CLogica.Logica;
 
 namespace ApiVeterinaria.Controllers
 {
@@ -14,95 +17,84 @@ namespace ApiVeterinaria.Controllers
     [ApiController]
     public class DuenoAnimalsController : ControllerBase
     {
-        private readonly VeterinariaContext _context;
+        private readonly IDuenoAnimalLogic _duenoAnimalLogic;
 
-        public DuenoAnimalsController(VeterinariaContext context)
+        public DuenoAnimalsController(IDuenoAnimalLogic duenoAnimalLogic)
         {
-            _context = context;
+            _duenoAnimalLogic = duenoAnimalLogic;
         }
 
-        // GET: api/DuenoAnimals
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<DuenoAnimal>>> GetDuenoAnimal()
-        {
-            return await _context.DuenoAnimal.ToListAsync();
-        }
+        //// GET: api/DuenoAnimals
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<DuenoAnimal>>> GetDuenoAnimal()
+        //{
+        //    return await _context.DuenoAnimal.ToListAsync();
+        //}
 
-        // GET: api/DuenoAnimals/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<DuenoAnimal>> GetDuenoAnimal(int id)
-        {
-            var duenoAnimal = await _context.DuenoAnimal.FindAsync(id);
+        //// GET: api/DuenoAnimals/5
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<DuenoAnimal>> GetDuenoAnimal(int id)
+        //{
+        //    var duenoAnimal = await _context.DuenoAnimal.FindAsync(id);
 
-            if (duenoAnimal == null)
-            {
-                return NotFound();
-            }
+        //    if (duenoAnimal == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return duenoAnimal;
-        }
+        //    return duenoAnimal;
+        //}
 
         // PUT: api/DuenoAnimals/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutDuenoAnimal(int id, DuenoAnimal duenoAnimal)
+        public async Task<IActionResult> PutDuenoAnimal([FromBody] EditarDuenoDTO dto)
         {
-            if (id != duenoAnimal.IdDuenoAnimal)
+            if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
-
-            _context.Entry(duenoAnimal).State = EntityState.Modified;
-
-            try
+            var duenoAnimal = await _duenoAnimalLogic.ModificarDueno(dto);
+            if(!duenoAnimal)
             {
-                await _context.SaveChangesAsync();
+                return NotFound("No se encontró el dueño del animal indicado.");
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!DuenoAnimalExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return Ok("Dueño modificado correctamente.");
         }
 
         // POST: api/DuenoAnimals
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<DuenoAnimal>> PostDuenoAnimal(DuenoAnimal duenoAnimal)
+        public async Task<IActionResult> DuenoAnimal([FromBody] CrearDuenoDTO dto)
         {
-            _context.DuenoAnimal.Add(duenoAnimal);
-            await _context.SaveChangesAsync();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            return CreatedAtAction("GetDuenoAnimal", new { id = duenoAnimal.IdDuenoAnimal }, duenoAnimal);
-        }
+            await _duenoAnimalLogic.CrearDueno(dto);
+            return Ok("Dueño creado correctamente.");
+
+        }  
 
         // DELETE: api/DuenoAnimals/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDuenoAnimal(int id)
         {
-            var duenoAnimal = await _context.DuenoAnimal.FindAsync(id);
-            if (duenoAnimal == null)
+            try
             {
-                return NotFound();
+                await _duenoAnimalLogic.EliminarDueno(id);
+                return Ok("Dueño eliminado correctamente.");
             }
-
-            _context.DuenoAnimal.Remove(duenoAnimal);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                return NotFound("No se encontró el dueño del animal indicado.");
+            }
         }
 
-        private bool DuenoAnimalExists(int id)
-        {
-            return _context.DuenoAnimal.Any(e => e.IdDuenoAnimal == id);
-        }
+        //private bool DuenoAnimalExists(int id)
+        //{
+        //    return _context.DuenoAnimal.Any(e => e.IdDuenoAnimal == id);
+        //}
     }
 }

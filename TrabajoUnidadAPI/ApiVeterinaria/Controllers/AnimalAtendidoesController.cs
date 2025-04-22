@@ -18,39 +18,37 @@ namespace ApiVeterinaria.Controllers
     [ApiController]
     public class AnimalAtendidoesController : ControllerBase
     {
-        private readonly VeterinariaContext _context;
         private readonly IDuenoAnimalRepository _DuenoAnimalRepository;
         private readonly IAnimalAtendidoRepository _AnimalAtendidoRepository;
         private readonly IAnimalAtendidoLogic _AnimalAtendidoLogic;
 
-        public AnimalAtendidoesController(VeterinariaContext context, IAnimalAtendidoRepository animalAtendidoRepository, IDuenoAnimalRepository duenoAnimalRepository, IAnimalAtendidoLogic animalAtendidoLogic)
+        public AnimalAtendidoesController(IAnimalAtendidoRepository animalAtendidoRepository, IDuenoAnimalRepository duenoAnimalRepository, IAnimalAtendidoLogic animalAtendidoLogic)
         {
-            _context = context;
             _AnimalAtendidoRepository = animalAtendidoRepository;
             _DuenoAnimalRepository = duenoAnimalRepository;
             _AnimalAtendidoLogic = animalAtendidoLogic;
         }
 
-        // GET: api/AnimalAtendidoes
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<AnimalAtendido>>> GetAnimalAtendido()
-        {
-            return await _context.AnimalAtendido.ToListAsync();
-        }
+        //// GET: api/AnimalAtendidoes
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<AnimalAtendido>>> GetAnimalAtendido()
+        //{
+        //    return await .ToListAsync();
+        //}
 
-        // GET: api/AnimalAtendidoes/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<AnimalAtendido>> GetAnimalAtendido(int id)
-        {
-            var animalAtendido = await _context.AnimalAtendido.FindAsync(id);
+        //// GET: api/AnimalAtendidoes/5
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<AnimalAtendido>> GetAnimalAtendido(int id)
+        //{
+        //    var animalAtendido = await _context.AnimalAtendido.FindAsync(id);
 
-            if (animalAtendido == null)
-            {
-                return NotFound();
-            }
+        //    if (animalAtendido == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return animalAtendido;
-        }
+        //    return animalAtendido;
+        //}
 
         // PUT: api/AnimalAtendidoes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -103,13 +101,13 @@ namespace ApiVeterinaria.Controllers
             }
             catch (ArgumentException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound("No se encontro el animal indicado.");
             }
         }
 
-        private bool AnimalAtendidoExists(int id)
-        {
-            return _context.AnimalAtendido.Any(e => e.IdAnimalatendido == id);
-        }
+        //private bool AnimalAtendidoExists(int id)
+        //{
+        //    return _context.AnimalAtendido.Any(e => e.IdAnimalatendido == id);
+        //}
     }
 }
