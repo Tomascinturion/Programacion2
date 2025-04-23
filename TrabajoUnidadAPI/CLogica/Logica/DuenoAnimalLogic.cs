@@ -1,4 +1,5 @@
 ﻿using CDatos.Entidades;
+using CDatos.Repositorios;
 using CDatos.Repositorios.Implementaciones;
 using CEntidades.DTOs;
 using CLogica.Logica.Implementaciones;
@@ -56,6 +57,20 @@ namespace CLogica.Logica
 
             _DuenoAnimalRepository.Delete(dueno);
             await _DuenoAnimalRepository.SaveAsync();
+        }
+        public async Task<DuenoAnimal> ObtenerDuenoPorId(int id)
+        {
+            var atencion = await _DuenoAnimalRepository.GetById(id);
+            if (atencion == null)
+            {
+                throw new ArgumentException("La persona buscada no existe");
+            }
+            return atencion;
+        }
+        public async Task<List<DuenoAnimal>> ObtenerDuenos()
+        {
+            var atenciones = await _DuenoAnimalRepository.FindAllAsync();
+            return atenciones.ToList();
         }
     }
 }

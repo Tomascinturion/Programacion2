@@ -1,4 +1,5 @@
-﻿using CEntidades.DTOs;
+﻿using CDatos.Entidades;
+using CEntidades.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,7 @@ namespace CLogica.Logica.Implementaciones
 
         public Task<bool> EditarAnimalAsync(EditarAnimalAtendidoDTO dto);
         public Task EliminarAnimal(int id);
+        public Task<AnimalAtendido> ObtenerAnimalPorId(int id);
+        public Task<List<AnimalAtendido>> ObtenerAnimales();
     }
 }

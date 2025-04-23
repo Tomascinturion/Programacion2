@@ -1,4 +1,5 @@
-﻿using CEntidades.DTOs;
+﻿using CDatos.Entidades;
+using CEntidades.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,7 @@ namespace CLogica.Logica.Implementaciones
         public Task CrearDueno(CrearDuenoDTO dto);
         public Task<bool> ModificarDueno(EditarDuenoDTO dto);
         public Task EliminarDueno(int id);
+        public Task<DuenoAnimal> ObtenerDuenoPorId(int id);
+        public Task<List<DuenoAnimal>> ObtenerDuenos();
     }
 }

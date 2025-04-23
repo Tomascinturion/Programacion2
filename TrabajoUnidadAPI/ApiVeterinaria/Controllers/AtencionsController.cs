@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CDatos.Entidades;
 using TodoApi.Models;
+using CLogica.Logica.Implementaciones;
+using CEntidades.DTOs;
 
 namespace ApiVeterinaria.Controllers
 {
@@ -14,95 +16,88 @@ namespace ApiVeterinaria.Controllers
     [ApiController]
     public class AtencionsController : ControllerBase
     {
-        private readonly VeterinariaContext _context;
+        private readonly IAtencionLogic _AtencionLogic;
 
-        public AtencionsController(VeterinariaContext context)
+        public AtencionsController(IAtencionLogic atencionLogic)
         {
-            _context = context;
+            _AtencionLogic = atencionLogic;
         }
 
-        // GET: api/Atencions
+        //GET: api/Atencions
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Atencion>>> GetAtencion()
         {
-            return await _context.Atencion.ToListAsync();
+            return await _AtencionLogic.ObtenerAtenciones();
         }
 
         // GET: api/Atencions/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Atencion>> GetAtencion(int id)
         {
-            var atencion = await _context.Atencion.FindAsync(id);
+            var atencion = await _AtencionLogic.ObtenerAtencionPorId(id);
 
             if (atencion == null)
             {
                 return NotFound();
             }
 
-            return atencion;
+            return Ok(atencion);
         }
 
         // PUT: api/Atencions/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAtencion(int id, Atencion atencion)
+        public async Task<IActionResult> PutAtencion([FromBody] EditarAtencionDTO dto)
         {
-            if (id != atencion.IdAtencion)
+            if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
-
-            _context.Entry(atencion).State = EntityState.Modified;
-
-            try
+            var atencion = await _AtencionLogic.ModificarAtencion(dto);
+            if (!atencion)
             {
-                await _context.SaveChangesAsync();
+                return NotFound("No se encontró la atención indicada.");
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!AtencionExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return Ok("Atencion modificada correctamente.");
         }
 
         // POST: api/Atencions
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Atencion>> PostAtencion(Atencion atencion)
+        public async Task<IActionResult> PostAtencion([FromBody] CrearAtencionDTO dto)
         {
-            _context.Atencion.Add(atencion);
-            await _context.SaveChangesAsync();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                await _AtencionLogic.CrearAtencion(dto);
+                return Ok("Atención creada correctamente.");
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest("Error en los campos ingresados.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno del servidor: " + ex.Message);
 
-            return CreatedAtAction("GetAtencion", new { id = atencion.IdAtencion }, atencion);
+            }
         }
-
         // DELETE: api/Atencions/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAtencion(int id)
         {
-            var atencion = await _context.Atencion.FindAsync(id);
-            if (atencion == null)
+            try
             {
-                return NotFound();
+                await _AtencionLogic.EliminarAtencion(id);
+                return Ok("Atención eliminada correctamente.");
             }
-
-            _context.Atencion.Remove(atencion);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        private bool AtencionExists(int id)
-        {
-            return _context.Atencion.Any(e => e.IdAtencion == id);
+            catch (ArgumentException ex)
+            {
+                return NotFound("No se encontro la atención a eliminar.");
+            }
         }
     }
 }

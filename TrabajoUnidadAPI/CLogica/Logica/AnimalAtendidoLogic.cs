@@ -8,6 +8,7 @@ using CDatos.Repositorios.Implementaciones;
 using CEntidades.DTOs;
 using Microsoft.EntityFrameworkCore;
 using CDatos.Entidades;
+using CDatos.Repositorios;
 
 
 namespace CLogica.Logica
@@ -76,6 +77,20 @@ namespace CLogica.Logica
             _AnimalAtendidoRepository.Delete(animal);
             await _AnimalAtendidoRepository.SaveAsync();
         }
-        
+        public async Task<AnimalAtendido> ObtenerAnimalPorId(int id)
+        {
+            var animal = await _AnimalAtendidoRepository.GetById(id);
+            if (animal == null)
+            {
+                throw new ArgumentException("El animal buscado no existe");
+            }
+            return animal;
+        }
+        public async Task<List<AnimalAtendido>> ObtenerAnimales()
+        {
+            var animales = await _AnimalAtendidoRepository.FindAllAsync();
+            return animales.ToList();
+        }
+
     }
 }

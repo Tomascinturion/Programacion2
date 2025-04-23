@@ -24,26 +24,26 @@ namespace ApiVeterinaria.Controllers
             _duenoAnimalLogic = duenoAnimalLogic;
         }
 
-        //// GET: api/DuenoAnimals
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<DuenoAnimal>>> GetDuenoAnimal()
-        //{
-        //    return await _context.DuenoAnimal.ToListAsync();
-        //}
+        // GET: api/DuenoAnimals
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<DuenoAnimal>>> GetDuenoAnimal()
+        {
+            return await _duenoAnimalLogic.ObtenerDuenos();
+        }
 
-        //// GET: api/DuenoAnimals/5
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<DuenoAnimal>> GetDuenoAnimal(int id)
-        //{
-        //    var duenoAnimal = await _context.DuenoAnimal.FindAsync(id);
+        // GET: api/DuenoAnimals/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<DuenoAnimal>> GetDuenoAnimal(int id)
+        {
+            var duenoAnimal = await _duenoAnimalLogic.ObtenerDuenoPorId(id);
 
-        //    if (duenoAnimal == null)
-        //    {
-        //        return NotFound();
-        //    }
+            if (duenoAnimal == null)
+            {
+                return NotFound();
+            }
 
-        //    return duenoAnimal;
-        //}
+            return Ok(duenoAnimal);
+        }
 
         // PUT: api/DuenoAnimals/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -92,9 +92,5 @@ namespace ApiVeterinaria.Controllers
             }
         }
 
-        //private bool DuenoAnimalExists(int id)
-        //{
-        //    return _context.DuenoAnimal.Any(e => e.IdDuenoAnimal == id);
-        //}
     }
 }
