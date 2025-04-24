@@ -12,9 +12,12 @@ namespace CDatos.Repositorios
 {
     public class DuenoAnimalRepository : Repository<DuenoAnimal>, IDuenoAnimalRepository
     {
-        public DuenoAnimalRepository(VeterinariaContext context) : base(context) { }
-
         private readonly VeterinariaContext _context;
+        public DuenoAnimalRepository(VeterinariaContext context) : base(context) 
+        {
+            _context = context;
+        }
+
 
         public async Task<DuenoAnimal> ObtenerPorDniAsync(int dni)
         {

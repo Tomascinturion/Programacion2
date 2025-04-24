@@ -24,8 +24,10 @@ namespace CLogica.Logica
             _DuenoAnimalRepository = DuenoAnimalRepository;
         }
 
-        public async Task AltaAnimalAsync(CrearAnimalAtendidoDTO dto, int idDueno)
+        public async Task AltaAnimalAsync(CrearAnimalAtendidoDTO dto, DuenoAnimal idDueno)
         {
+            try
+            {
             if (dto.Edad < 0)
             {
                 throw new ArgumentException("La edad no puede ser negativa.");
@@ -37,11 +39,17 @@ namespace CLogica.Logica
                 Raza = dto.Raza,
                 Edad = dto.Edad,
                 Sexo = dto.Sexo,
-                DuenoAnimal = new DuenoAnimal { IdDuenoAnimal = idDueno }
+                DuenoAnimal = idDueno
             };
             
             _AnimalAtendidoRepository.Create(animal);
             await _AnimalAtendidoRepository.SaveAsync();
+
+            }
+            catch(Exception ex)
+            {
+                throw new ArgumentException("Error al crear el animal: " + ex.Message);
+            }
         }
 
         public async Task<bool> EditarAnimalAsync(EditarAnimalAtendidoDTO dto)

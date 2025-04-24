@@ -10,17 +10,17 @@ namespace CEntidades.DTOs
 {
     public class CrearAnimalAtendidoDTO
     {
-        [Required]
+        //[Required]
         public string Nombre { get; set; }
-        [Required]
+        //[Required]
         public TipoAnimal IdTipoAnimal { get; set; }
-        [Required]
+        //[Required]
         public string Raza { get; set; }
-        [Range(0, 100)]
+        //[Range(0, 100)]
         public int Edad { get; set; }
-        [Required]
+        //[Required]
         public string Sexo { get; set; }
-        [Required]
+        //[Required]
         public int DniDuenoAnimal { get; set; }
     }
 }

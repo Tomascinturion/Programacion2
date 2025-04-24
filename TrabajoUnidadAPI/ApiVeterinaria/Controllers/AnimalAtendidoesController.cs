@@ -84,7 +84,7 @@ namespace ApiVeterinaria.Controllers
                 return NotFound("No se encontró un dueño con ese DNI.");
 
             
-            await _AnimalAtendidoLogic.AltaAnimalAsync(dto, dueno.IdDuenoAnimal);
+            await _AnimalAtendidoLogic.AltaAnimalAsync(dto, dueno);
 
             
             return Ok("Animal registrado correctamente.");

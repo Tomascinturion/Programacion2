@@ -10,7 +10,7 @@ namespace CLogica.Logica.Implementaciones
 {
     public interface IAnimalAtendidoLogic
     {
-        public Task AltaAnimalAsync(CrearAnimalAtendidoDTO dto, int idDueno);
+        public Task AltaAnimalAsync(CrearAnimalAtendidoDTO dto, DuenoAnimal idDueno);
 
         public Task<bool> EditarAnimalAsync(EditarAnimalAtendidoDTO dto);
         public Task EliminarAnimal(int id);

@@ -18,7 +18,7 @@ public class VeterinariaContext : DbContext
     {
         optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=VeterinariaProg;Integrated Security=True;TrustServerCertificate=true;");
     }
-
+   
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.HasAnnotation("Relational:Collation", "en_US.UTF-8");
