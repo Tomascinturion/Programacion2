@@ -1,6 +1,6 @@
-﻿using System;
+﻿using ConsolaTrabajoUnidadAPI.Metodos;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,19 +8,15 @@ using static ConsolaTrabajoUnidadAPI.Metodos.Animales;
 
 namespace ConsolaTrabajoUnidadAPI.DTOs
 {
-    public class CrearAnimalAtendidoDTO
+    public class LecturaAnimalDTO
     {
-        //[Required]
+        public int IdAnimalatendido { get; set; }
         public string Nombre { get; set; }
-        //[Required]
         public TipoAnimal IdTipoAnimal { get; set; }
-        //[Required]
         public string Raza { get; set; }
-        //[Range(0, 100)]
         public int Edad { get; set; }
-        //[Required]
         public string Sexo { get; set; }
-        //[Required]
-        public int DniDuenoAnimal { get; set; }
+        public string DniDuenoAnimal { get; set; }
+        
     }
 }
