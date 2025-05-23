@@ -9,7 +9,7 @@ namespace ConsolaTrabajoUnidadAPI.Metodos.Interfaz
 {
     public interface IAnimales 
     {
-        Task<Uri> CreateAnimalAsync();
+        Task CreateAnimalAsync();
         Task UpdateAnimalAsync();
         Task<HttpStatusCode> DeleteAnimalAsync();
         Task GetAnimalAsync();

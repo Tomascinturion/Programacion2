@@ -31,13 +31,13 @@ class Program
             switch (opcion)
             {
                 case "1":
-                    // Llamar al menu de dueño
+                    MenuDueno();
                     break;
                 case "2":
                     MenuAnimal();
                     break;
                 case "3":
-                    // Llamar al menu de atencion
+                    MenuAtencion();
                     break;
                 case "4":
                     Console.WriteLine("Saliendo...");
@@ -94,7 +94,7 @@ class Program
             switch (opcion)
             {
                 case "1":
-                    // Llamar al metodo para crear dueño
+                    _duenos.CreateDuenoAsync();
                     break;
                 case "2":
                     return;
@@ -116,7 +116,7 @@ class Program
             switch (opcion)
             {
                 case "1":
-                    // Llamar al metodo para crear atencion
+                    _atenciones.CrearAtencion();
                     break;
                 case "2":
                     return;
@@ -126,25 +126,6 @@ class Program
             }
         }
     }
-
-    //static HttpClient client = new HttpClient();
-    //static void ShowAnimal(AnimalAtendido animal)
-    //{
-    //    Console.WriteLine($"Nombre: {animal.Nombre}\tEspecie: " +
-    //        $"{animal.IdTipoAnimal}\tRaza: {animal.Raza}\tEdad {animal.Edad}\tSexo {animal.Sexo}");
-    //}
-    //static async Task<Uri> CreateDuenoAsync(DuenoAnimal dueno)
-    //{
-    //    HttpResponseMessage response = await client.PostAsJsonAsync(
-    //        "api/DuenoAnimals", dueno);
-    //    response.EnsureSuccessStatusCode();
-
-    //    // return URI of the created resource.
-    //    return response.Headers.Location;
-    //}
-    
-
-
 }
 
 

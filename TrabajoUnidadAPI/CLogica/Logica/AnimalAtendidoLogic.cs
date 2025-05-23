@@ -94,11 +94,24 @@ namespace CLogica.Logica
             }
             return animal;
         }
-        public async Task<List<AnimalAtendido>> ObtenerAnimales()
-        {
-            var animales = await _AnimalAtendidoRepository.FindAllAsync();
-            return animales.ToList();
-        }
 
+        public async Task<List<LeerAnimalAtendidoDTO>> ObtenerAnimalesDTO()
+        {
+            var animales =await _AnimalAtendidoRepository.ObtenerAnimalesConDuenoAsync();
+
+            var dtoList = animales.Select(a => new LeerAnimalAtendidoDTO
+            {
+                IdAnimalatendido = a.IdAnimalatendido,
+                Nombre = a.Nombre,
+                TipoAnimal = a.IdTipoAnimal.ToString(),
+                Raza = a.Raza,
+                Edad = a.Edad,
+                Sexo = a.Sexo,
+                IdDueno = a.DuenoAnimal.IdDuenoAnimal,
+                NombreDueno = a.DuenoAnimal.Nombre
+            }).ToList();
+
+            return dtoList;
+        }
     }
 }

@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CDatos.Entidades
+namespace CEntidades.DTOs
 {
-    public class AnimalAtendido
+    public class LeerAnimalAtendidoDTO
     {
         public int IdAnimalatendido { get; set; }
         public string Nombre { get; set; }
-        public TipoAnimal IdTipoAnimal { get; set; }
+        public string TipoAnimal { get; set; }
         public string Raza { get; set; }
         public int Edad { get; set; }
         public string Sexo { get; set; }
-        public int IdDuenoAnimal { get; set; }
-        public DuenoAnimal DuenoAnimal { get; set; }
-        public ICollection<Atencion> Atencion { get; set;}
 
+        public int IdDueno { get; set; }
+        public string NombreDueno { get; set; }
     }
 }

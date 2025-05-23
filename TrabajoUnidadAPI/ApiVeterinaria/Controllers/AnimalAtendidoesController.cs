@@ -31,9 +31,17 @@ namespace ApiVeterinaria.Controllers
 
         // GET: api/AnimalAtendidoes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<AnimalAtendido>>> GetAnimalAtendido()
+        public async Task<ActionResult<IEnumerable<LeerAnimalAtendidoDTO>>> GetAnimales()
         {
-            return await _AnimalAtendidoLogic.ObtenerAnimales();
+            try
+            {
+                var animalesDTO = await _AnimalAtendidoLogic.ObtenerAnimalesDTO();
+                return Ok(animalesDTO);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error: {ex.Message}");
+            }
         }
 
         // GET: api/AnimalAtendidoes/5

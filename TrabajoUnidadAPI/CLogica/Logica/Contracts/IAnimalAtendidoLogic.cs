@@ -15,6 +15,6 @@ namespace CLogica.Logica.Implementaciones
         public Task<bool> EditarAnimalAsync(EditarAnimalAtendidoDTO dto);
         public Task EliminarAnimal(int id);
         public Task<AnimalAtendido> ObtenerAnimalPorId(int id);
-        public Task<List<AnimalAtendido>> ObtenerAnimales();
+        Task<List<LeerAnimalAtendidoDTO>> ObtenerAnimalesDTO();
     }
 }

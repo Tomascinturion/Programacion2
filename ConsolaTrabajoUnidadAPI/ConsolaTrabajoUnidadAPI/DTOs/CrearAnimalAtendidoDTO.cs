@@ -11,16 +11,16 @@ namespace ConsolaTrabajoUnidadAPI.DTOs
     public class CrearAnimalAtendidoDTO
     {
         //[Required]
-        public string Nombre { get; set; }
+        public string nombre { get; set; }
         //[Required]
-        public TipoAnimal IdTipoAnimal { get; set; }
+        public TipoAnimal idtipoanimal { get; set; }
         //[Required]
-        public string Raza { get; set; }
+        public string raza { get; set; }
         //[Range(0, 100)]
-        public int Edad { get; set; }
+        public int edad { get; set; }
         //[Required]
-        public string Sexo { get; set; }
+        public string sexo { get; set; }
         //[Required]
-        public int DniDuenoAnimal { get; set; }
+        public int dniduenoanimal { get; set; }
     }
 }

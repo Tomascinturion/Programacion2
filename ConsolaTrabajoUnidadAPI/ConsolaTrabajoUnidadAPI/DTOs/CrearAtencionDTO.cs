@@ -10,13 +10,13 @@ namespace ConsolaTrabajoUnidadAPI.DTOs
     public class CrearAtencionDTO
     {
         [Required]
-        public int IdAnimalAtendido { get; set; }
+        public int idanimalatendido { get; set; }
         [Required] 
-        public string Motivo { get; set; }
+        public string motivo { get; set; }
         [Required]
-        public string Tratamiento { get; set; }
+        public string tratamiento { get; set; }
         [Required]
-        public string Medicamentos { get; set; }
-        public DateTime? FechaAtencion { get; set; }
+        public string medicamentos { get; set; }
+        public DateTime? fechaatencion { get; set; }
     }
 }

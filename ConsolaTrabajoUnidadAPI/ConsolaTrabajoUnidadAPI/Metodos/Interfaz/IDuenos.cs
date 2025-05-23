@@ -8,5 +8,6 @@ namespace ConsolaTrabajoUnidadAPI.Metodos.Interfaz
 {
     public interface IDuenos
     {
+        Task CreateDuenoAsync();
     }
 }

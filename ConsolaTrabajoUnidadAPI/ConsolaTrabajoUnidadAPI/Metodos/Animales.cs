@@ -15,7 +15,7 @@ namespace ConsolaTrabajoUnidadAPI.Metodos
     {
 
         static HttpClient client = new HttpClient();
-        private const string path = "https://localhost:5239/api/AnimalAtendidoes";
+        private const string path = "http://localhost:5239/api/AnimalAtendidoes";
 
         public enum TipoAnimal
         {
@@ -26,7 +26,7 @@ namespace ConsolaTrabajoUnidadAPI.Metodos
 
         }
 
-        public async Task<Uri> CreateAnimalAsync()
+        public async Task CreateAnimalAsync()
         {
             Console.WriteLine("Ingrese el nombre del animal:");
             string nombre = Console.ReadLine();
@@ -44,27 +44,44 @@ namespace ConsolaTrabajoUnidadAPI.Metodos
             string dniDueno = Console.ReadLine();
             CrearAnimalAtendidoDTO crearAnimalAtendidoDTO = new CrearAnimalAtendidoDTO()
             {
-                Nombre = nombre,
-                IdTipoAnimal = tipoAnimal,
-                Raza = raza,
-                Edad = int.Parse(edad),
-                Sexo = sexo,
-                DniDuenoAnimal = int.Parse(dniDueno)
+                nombre = nombre,
+                idtipoanimal = tipoAnimal,
+                raza = raza,
+                edad = int.Parse(edad),
+                sexo = sexo,
+                dniduenoanimal = int.Parse(dniDueno)
             };
-            HttpResponseMessage response = await client.PostAsJsonAsync(
-                "api/AnimalAtendidoes", crearAnimalAtendidoDTO);
-            response.EnsureSuccessStatusCode();
+            try
+            {
+                var json = JsonSerializer.Serialize(crearAnimalAtendidoDTO);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            // return URI of the created resource.
-            return response.Headers.Location;
+                var response = await client.PostAsync(path, content);
+                response.EnsureSuccessStatusCode();
+
+                Console.WriteLine("Animal creado exitosamente!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
         }
         public async Task<HttpStatusCode> DeleteAnimalAsync()
         {
-            Console.WriteLine("Ingrese el id del animal a eliminar:");
-            string id = Console.ReadLine();
-            HttpResponseMessage response = await client.DeleteAsync(
-                $"api/AnimalAtendidoes/{id}");
-            return response.StatusCode;
+            try
+            {
+                Console.WriteLine("Ingrese el id del animal a eliminar:");
+                string id = Console.ReadLine();
+                HttpResponseMessage response = await client.DeleteAsync(
+                   path + $"/{id}");
+                return response.StatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return HttpStatusCode.InternalServerError;
+            }
+
         }
         public async Task UpdateAnimalAsync()
         {
@@ -80,20 +97,27 @@ namespace ConsolaTrabajoUnidadAPI.Metodos
             string sexo = Console.ReadLine();
             EditarAnimalAtendidoDTO editarAnimalAtendidoDTO = new EditarAnimalAtendidoDTO()
             {
-                IdAnimalAtendido = id,
-                Nombre = nombre,
-                Raza = raza,
-                Edad = edad,
-                Sexo = sexo
+                idanimalatendido = id,
+                nombre = nombre,
+                raza = raza,
+                edad = edad,
+                sexo = sexo
             };
 
-            HttpResponseMessage response = await client.PutAsJsonAsync(
-                $"api/AnimalAtendidoes/{id}", editarAnimalAtendidoDTO);
-            response.EnsureSuccessStatusCode();
+            try
+            {
+                var json = JsonSerializer.Serialize(editarAnimalAtendidoDTO);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            //// Deserialize the updated product from the response body.
-            //editarAnimalAtendidoDTO = await response.Content.ReadAsAsync<EditarAnimalAtendidoDTO>();
-            //return editarAnimalAtendidoDTO;
+                var response = await client.PutAsync(path + $"/{id}", content);
+                response.EnsureSuccessStatusCode();
+
+                Console.WriteLine("Animal modificado exitosamente!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
         }
         public async Task GetAnimalAsync()
         {
@@ -108,13 +132,14 @@ namespace ConsolaTrabajoUnidadAPI.Metodos
 
                 foreach (var animal in animales)
                 {
-                    Console.WriteLine($"Id: {animal.IdAnimalatendido}:" +
-                        $"\n   Nombre: {animal.Nombre}" +
-                        $"\n   Tipo:{animal.IdTipoAnimal}" +
-                        $"\n   Raza: {animal.Raza}" +
-                        $"\n   Edad: {animal.Edad}" +
-                        $"\n   Sexo: {animal.Sexo}" +
-                        $"\n   Dueño: {animal.DniDuenoAnimal}");
+                    Console.WriteLine($"Id: {animal.idAnimalatendido}:" +
+                        $"\n   Nombre: {animal.nombre}" +
+                        $"\n   Tipo:{animal.tipoAnimal}" +
+                        $"\n   Raza: {animal.raza}" +
+                        $"\n   Edad: {animal.edad}" +
+                        $"\n   Sexo: {animal.sexo}" +
+                        $"\n   ID Dueño: {animal.idDueno}" +
+                        $"\n   Nombre Dueño: {animal.nombreDueno}"); 
                 }
             }
             catch (Exception ex)
